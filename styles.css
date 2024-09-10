@@ -1,14 +1,37 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  background: linear-gradient(
+    135deg,
+    #0c0c0c,
+    #3b3b6d
+  ); /* Black to Dark Purple */
+  color: #fff;
 }
 
 #board {
   height: 540px;
   width: 630px;
-  background-color: rgba(0, 0, 0, 0.833);
-  border: 10px solid #0b0000;
+  background-color: #0c0c0c;
+  border: 10px solid #00ffff;
   margin: 0 auto;
   flex-wrap: wrap;
   display: flex;
+}
+
+.tile {
+  height: 70px;
+  width: 70px;
+  margin: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 5px solid #00ffff;
+}
+
+.red-piece {
+  background-color: #ff073a;
+}
+
+.yellow-piece {
+  background-color: #ffd700;
 }
